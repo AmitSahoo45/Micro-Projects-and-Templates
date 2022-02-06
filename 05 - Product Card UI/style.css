@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Monstserrat', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #212121;
+}
+
+.card {
+    position: relative;
+    width: 320px;
+    height: 440px;
+    background: #191919;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    width: 100%;
+    height: 100%;
+    background: #DD1925;
+    transform: skewY(345deg);
+    -webkit-transform: skewY(345deg);
+    -moz-transform: skewY(345deg);
+    -ms-transform: skewY(345deg);
+    -o-transform: skewY(345deg);
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.card:hover::before {
+    top: -70%;
+    transform: skewY(390deg);
+    -webkit-transform: skewY(390deg);
+    -moz-transform: skewY(390deg);
+    -ms-transform: skewY(390deg);
+    -o-transform: skewY(390deg);
+}
+
+.card::after {
+    content: "";
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-weight: 600;
+    font-size: 6em;
+    color: rgba(0, 0, 0, 0.1);
+}
+
+.card .imgbox {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    z-index: 1;
+}
+
+.card .imgbox img {
+    max-width: 100%;
+    transition: .5s;
+}
+
+.card:hover .imgbox img {
+    max-width: 60%;
+}
+
+.card .content-box {
+    position: relative;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 2;
+}
+
+.card .content-box h3 {
+    font-size: 1.3rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    margin: 0.3rem 0;
+}
+
+.card .content-box .price {
+    font-size: 1rem;
+    color: #FFFFFF;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.card .content-box .buy {
+    position: relative;
+    top: 100px;
+    opacity: 0;
+    padding: 10px 30px;
+    margin-top: 1.2rem;
+    color: #000000;
+    text-decoration: none;
+    background: #DD1925;
+    border-radius: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.5s;
+}
+
+.card:hover .content-box .buy {
+    top: 30px;
+    opacity: 1;
+}

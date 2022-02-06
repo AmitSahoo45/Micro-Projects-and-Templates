@@ -1,5 +1,17 @@
+const tableBody = document.getElementById('tablebody')
+const searchBox = document.getElementById('myInput')
+
+// searchBox.addEventListener('change', (e) => {
+//     if (e.target.value == 0)
+// })
+
 const searchFun = () => {
-    let filter = document.getElementById('myInput').value.toUpperCase();
+    let filter = searchBox.value.toUpperCase();
+    // console.log(searchBox.value)
+    if (searchBox.value == "")
+        tableBody.style.display = "none";
+    else
+        tableBody.style.display = "table-row-group";
 
     const myTable = document.getElementById('myTable');
     let tr = myTable.getElementsByTagName('tr')

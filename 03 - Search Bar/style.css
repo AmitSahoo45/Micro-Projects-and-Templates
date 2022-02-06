@@ -36,3 +36,12 @@ td {
     border: 1px solid black;
     border-collapse: collapse;
 }
+
+.display {
+    width: 100%;
+}
+
+#tablebody {
+    display: none;
+}
+/* display: table-row-group; */
