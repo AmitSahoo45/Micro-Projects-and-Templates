@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <title>Drawing Web App</title>
+</head>
+
+<body>
+    <div class="selector_place">
+        <div class="lineWidth">
+            <p>Select the width of your marker</p>
+            <div class="option_container">
+                <div class="option_box">
+                    <input type="radio" name="linewidth" id="lineiwdth" value="2">
+                    <label for="2">2</label>
+                </div>
+                <div class="option_box">
+                    <input type="radio" name="linewidth" id="lineiwdth" value="4">
+                    <label for="4">4</label>
+                </div>
+                <div class="option_box">
+                    <input type="radio" name="linewidth" id="lineiwdth" value="6">
+                    <label for="6">6</label>
+                </div>
+                <div class="option_box">
+                    <input type="radio" name="linewidth" id="lineiwdth" value="8">
+                    <label for="8">8</label>
+                </div>
+            </div>
+            <div class="color__picker">
+                <label for="color">Pick you Pen color : </label>
+                <input type="color" name="color" id="colorid">
+            </div>
+        </div>
+    </div>
+    <div id="windows">
+        <canvas id="canvas"></canvas>
+    </div>
+    <script src="/index.js"></script>
+</body>
+
+</html>

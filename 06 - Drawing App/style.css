@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+#canvas {
+    border: 2px solid #000000;
+}
+
+.selector_place{
+    position: absolute;
+}
+
+.lineWidth {
+    padding: 0.5rem;
+}
+
+.lineWidth p{
+    margin: 0.2rem 0;
+}
+
+.option_container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.option_box {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 0.5rem;
+    background-color: #FFE3FE;
+    border: 1px solid #000000;
+}
+
+.option_box label {
+    margin-left: 0.3rem;
+}
