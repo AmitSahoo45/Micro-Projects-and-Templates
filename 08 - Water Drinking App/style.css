@@ -1,0 +1,170 @@
+:root {
+    --blue-shade-1: #CAF0F8;
+    --blue-shade-2: #90E0EF;
+    --blue-shade-3: #00B4D8;
+    --blue-shade-4: #03045E;
+    --blue-shade-5: #6AB3F8;
+    --error: #ff0000;
+    --Poppins: 'Poppins', sans-serif;
+    --Redressed: 'Redressed', cursive;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--Poppins);
+    background-color: #3494E4;
+}
+
+a,
+li,
+ul {
+    text-decoration: none;
+    color: #FFFFFF;
+    list-style-type: none;
+}
+
+.error__message {
+    color: var(--error);
+    font-weight: bold;
+    visibility: hidden;
+}
+
+.error__message__sub {
+    color: var(--error);
+    font-size: 0.6rem;
+}
+
+.tracker__container {
+    padding: 1rem;
+    display: flex;
+}
+
+.user__amount__details {
+    display: flex;
+    flex-direction: column;
+    flex: 0.5;
+}
+
+.cup__holder {
+    display: flex;
+    justify-content: center;
+    flex: 0.5;
+}
+
+.question__box {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: var(--blue-shade-1);
+}
+
+.input__box__container {
+    color: var(--blue-shade-4);
+}
+
+.input__box {
+    outline: none;
+    padding: 0.3rem;
+}
+
+.btn {
+    padding: 0.5rem 1rem;
+    margin: 0.5rem 0;
+    border: 2px solid var(--blue-shade-3);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: var(--blue-shade-3);
+    cursor: pointer;
+    transition: 0.2s all linear;
+    -webkit-transition: 0.2s all linear;
+    -moz-transition: 0.2s all linear;
+    -ms-transition: 0.2s all linear;
+    -o-transition: 0.2s all linear;
+}
+
+.btn:hover {
+    background-color: var(--blue-shade-4);
+}
+
+.cup {
+    background-color: #fff;
+    border: 4px solid var(--blue-shade-4);
+    color: #144fc6;
+    border-radius: 0 0 40px 40px;
+    height: 330px;
+    width: 150px;
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.info__box {
+    padding: 1rem;
+    background: #FFFFFF;
+    width: 90%;
+    text-align: center;
+    border: none;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.info__box small{
+    color: var(--error);
+    font-weight: bold;
+}
+
+.drinking__statistics {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info__display__box{
+    text-align: left;
+}
+
+.cup__container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    padding: 0.5rem;
+}
+
+.cup-small {
+    height: 95px;
+    width: 60px;
+    border-radius: 0 0 15px 15px;
+    background-color: rgba(255, 255, 255, 0.9);
+    cursor: pointer;
+    font-size: 14px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 5px;
+    transition: 0.3s ease;
+}
+
+.message__box {
+    height: 100px;
+    width: 100%;
+    background-color: #FFFFFF;
+    resize: none;
+    color: var(--error);
+    font-size: 2rem;
+    text-align: center;
+}

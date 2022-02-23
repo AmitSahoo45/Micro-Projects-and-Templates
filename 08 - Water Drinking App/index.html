@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&family=Redressed&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <title>Water Tracker Daily</title>
+</head>
+
+<body>
+    <div class="landing__page"></div>
+    <div class="tracker__container">
+        <div class="user__amount__details">
+            <div class="question__box">
+                <h2>Enter your target for Today</h2>
+            </div>
+            <div class="input__box__container">
+                <label for="drinkingTarget">How many litres of water will you drink today : -</label>
+                <input type="number" id="dlywtgl" class="input__box">
+            </div>
+            <div class="water__division">
+                <div class="question__box">
+                    <h2>Set your water division</h2>
+                </div>
+                <div class="input__box__container">
+                    <input type="radio" name="glasses" value="8">8<br>
+                    <input type="radio" name="glasses" value="10">10<br>
+                    <input type="radio" name="glasses" value="12">12<br>
+                </div>
+            </div>
+            <div class="error__message">
+                <span id="target__error">Error Message</span>
+            </div>
+            <button class="btn" id="targetSubmit">
+                Set Goal
+            </button>
+        </div>
+        <div class="cup__holder">
+            <div class="info__box">
+                <h1>Water Tracker</h1>
+                <small>
+                    Amount in litres
+                </small>
+                <div class="info__display__box">
+                    <p>Consumption target set by user : <span id="userSetTarget"></span></p>
+                    <p>Amount of Water Consumed : <span id="glassesConsumed"></span></p>
+                    <p>Amount of Water remaining to be consumed : <span id="glassesRemaining"></span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="drinking__statistics">
+        <div class="question__box">
+            <h2>Enter the amount of water you have consumed</h2>
+        </div>
+        <div class="cup__container">
+            <div class="cup cup-small" id="100ml" value="100">100ml</div>
+            <span>or</span>
+            <div class="cup cup-small" id="150ml" value="100">150ml</div>
+            <span>or</span>
+            <div class="cup cup-small" id="200ml" value="100">200ml</div>
+            <span>or</span>
+            <div class="cup cup-small" id="250ml" value="100">250ml</div>
+        </div>
+    </div>
+
+
+    <script src="/script.js"></script>
+</body>
+
+</html>
